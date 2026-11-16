@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Salesforce OrgMaster</title>
+<style>
+:root{--bg:#f7f8f5;--fg:#1a2420;--mut:#47544c;--line:#d5dacd;--acc:#17707a}
+@media (prefers-color-scheme:dark){:root{--bg:#101a17;--fg:#e6ece8;--mut:#a9b7ae;--line:#2b3a34;--acc:#4fb3be}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:820px;margin:0 auto;padding:40px 20px 80px}
+h1{font-size:30px;margin:0 0 6px} h2{font-size:20px;margin:36px 0 8px;padding-top:6px;border-top:1px solid var(--line)}
+p,li{color:var(--fg)} .meta{color:var(--mut)} code{background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px;font-size:.9em}
+mark{background:#ffe58a;color:#3a2e00;padding:0 3px;border-radius:3px}
+.tw{overflow-x:auto} table{border-collapse:collapse;width:100%;font-size:15px} th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top} th{background:rgba(127,127,127,.12)}
+hr{border:0;border-top:1px solid var(--line);margin:36px 0 16px} em{color:var(--mut)}
+</style></head><body><main>
+<h1>Privacy Policy — Salesforce OrgMaster</h1>
+<p class="meta"><strong>Effective date:</strong> 16 November 2026</p>
+<p><strong>Publisher:</strong> Zordial Technologies Pvt Ltd. ("Zordial", "we", "us")</p>
+<p><strong>Contact:</strong> <a href="mailto:productsupport@zordial.in">productsupport@zordial.in</a> · <a href="https://zordial.com">https://zordial.com</a> · Bambala Pulia Toll Tax, 100-102, Tonk Rd, near Jaipuria Mgt College, Ram Nagar, Pratap Nagar, Jaipur, Rajasthan 302033</p>
+<p>Salesforce OrgMaster (the "Extension") is a Chrome extension that helps Salesforce administrators, developers and architects explore and analyze their own Salesforce org — objects, fields, permissions, metadata, Apex, dependencies, debug logs and more — using the Salesforce session they are already signed in with.</p>
+<p><strong>In short:</strong> the Extension works directly between your browser and your Salesforce org. Zordial has no servers that receive your Salesforce data. We do not sell data, show ads, or run analytics or tracking in the Extension. The only information that ever reaches us is feedback you choose to send.</p>
+<h2>1. Information the Extension accesses</h2>
+<div class="tw"><table><thead><tr><th>What</th><th>Why</th><th>Where it goes</th></tr></thead><tbody><tr><td><strong>Salesforce session cookie (<code>sid</code>)</strong> for the org you connect</td><td>To authenticate calls to Salesforce's own APIs on your behalf, with your existing permissions. No separate login or token is created.</td><td>Read by the Extension and kept <strong>in memory only</strong> while the dashboard is open. Sent only to your own Salesforce org's domain. Never stored on disk, never sent to Zordial or any third party.</td></tr><tr><td><strong>Salesforce org data</strong> — metadata (objects, fields, layouts, flows, Apex code, permissions, setup audit trail, debug logs) and, when you run a query or use a data tool, <strong>record data</strong></td><td>To display and analyze it in the Extension's panels.</td><td>Fetched directly from your Salesforce org to your browser and shown on your screen. Not transmitted to Zordial or any third party.</td></tr><tr><td><strong>Salesforce page URL and tab information</strong></td><td>To detect which Salesforce org tab is open, to connect, and to open links in the right tab.</td><td>Processed locally in your browser.</td></tr></tbody></table></div>
+<h2>2. Information stored on your device</h2>
+<p>The Extension uses Chrome's local extension storage (<code>chrome.storage.local</code>) and session storage to remember, on your device only:</p>
+<ul>
+<li>favorites, tags, recently viewed items and usage history;</li>
+<li>your SOQL / Apex run history and the last Execute Anonymous code you ran;</li>
+<li>a local audit log of changes made through the Extension, ignored code-analysis issues and scan history, recent dependency-graph searches;</li>
+<li>preferences such as theme, collapsed menu groups, panel opt-ins and launcher position;</li>
+<li>the host name of the org you most recently connected to (to offer a quick reconnect).</li>
+</ul>
+<p>This data is grouped per Salesforce org and user, stays on your computer, and is not sent to us. You can remove it at any time by clearing the Extension's data or uninstalling it in Chrome (<code>chrome://extensions</code>). Because it can include query text and record identifiers from your org, treat the browser profile like any other place where work data lives.</p>
+<h2>3. Actions the Extension takes in your org</h2>
+<p>The Extension reads from your org by default. It writes to your org <strong>only when you explicitly ask it to</strong> — for example when you run Execute Anonymous Apex, insert generated sandbox data, save Apex, edit metadata from the metadata editor, or toggle debug logging. Turning on debug logging creates a Debug Level named "SalesforceOrgMaster" and a Trace Flag for the user you choose, in your org. Everything runs with your own Salesforce permissions and appears in your org's normal audit and debug records.</p>
+<h2>4. Feedback you choose to send</h2>
+<p>The in-app <strong>Help &amp; Feedback</strong> form is optional. If you submit it, the following is sent over HTTPS to <strong>Web3Forms</strong> (api.web3forms.com), a third-party form-delivery service that forwards it to Zordial's inbox:</p>
+<ul>
+<li>the category and the message you typed;</li>
+<li>your email address, only if you enter one;</li>
+<li>optional diagnostics, only if the diagnostics box is ticked: Extension version, the connected org's host name, API version, the panel you were on, and your browser's user-agent string.</li>
+</ul>
+<p>Do not include passwords, session IDs or customer data in feedback messages. We use feedback only to respond to you and to improve the Extension, and keep it only as long as needed for that purpose. Web3Forms processes the submission under its own terms and privacy policy.</p>
+<h2>5. What we do not do</h2>
+<ul>
+<li>We do not collect, receive or store your Salesforce data, credentials or session on any Zordial server.</li>
+<li>We do not sell or rent personal information, and we do not share it for advertising.</li>
+<li>We do not use analytics, telemetry, crash reporting or third-party trackers in the Extension.</li>
+<li>We do not send your org's data to any AI or machine-learning service.</li>
+<li>We do not load or run remotely hosted code; all code runs from the packaged Extension.</li>
+<li>We do not use or transfer user data for purposes unrelated to the Extension's single purpose, or to determine creditworthiness or for lending.</li>
+</ul>
+<p>The Extension's use of information received from Chrome and Google APIs adheres to the Chrome Web Store User Data Policy, including its Limited Use requirements.</p>
+<h2>6. Why each permission is needed</h2>
+<div class="tw"><table><thead><tr><th>Permission</th><th>Reason</th></tr></thead><tbody><tr><td><code>cookies</code></td><td>Read the Salesforce <code>sid</code> session cookie for the org you connect, so API calls run as you.</td></tr><tr><td><code>storage</code></td><td>Save the local preferences and history described in section 2.</td></tr><tr><td><code>tabs</code></td><td>Find open Salesforce tabs, switch to or open the right org page, and open the dashboard and welcome page.</td></tr><tr><td>Host access to <code><em>.salesforce.com</code>, <code></em>.force.com</code>, <code><em>.salesforce-setup.com</code>, <code></em>.visualforce.com</code>, <code><em>.lightning.force.com</code>, <code></em>.my.site.com</code></td><td>Call your org's REST, Tooling, SOAP and Metadata APIs and show the in-page launcher on Salesforce pages. These domains cover Salesforce production, sandbox, scratch, My Domain and Experience Cloud URLs.</td></tr><tr><td>Host access to <code>api.web3forms.com</code></td><td>Deliver the optional feedback form (section 4).</td></tr><tr><td>Content script on Salesforce pages</td><td>Shows a small launcher tab on Salesforce pages for quick access and one-click debug logging. It does not read or transmit page content to us.</td></tr></tbody></table></div>
+<h2>7. Security</h2>
+<p>Traffic between the Extension, Salesforce and Web3Forms uses HTTPS. The session cookie is held in memory only, and the Extension runs under a strict Content Security Policy (<code>script-src 'self'</code>). Access to your org is limited to what your Salesforce user can already do. You remain responsible for securing your browser profile and Salesforce account.</p>
+<h2>8. Your choices and rights</h2>
+<p>You control the Extension: you decide which org to connect, which tools to use, and whether to send feedback. You can disconnect by closing the dashboard, clear local data or uninstall at any time. To ask what feedback-related personal data we hold about you, or to have it corrected or deleted, contact us at the address above. Where applicable law gives you additional rights (for example under India's Digital Personal Data Protection Act, 2023, or the GDPR), we will honour them.</p>
+<h2>9. Children</h2>
+<p>The Extension is a professional tool for Salesforce users and is not directed at children under 16. We do not knowingly collect information from children.</p>
+<h2>10. Changes to this policy</h2>
+<p>If we change how the Extension handles information, we will update this page and the effective date above, and where the change is material we will say so in the Extension's release notes.</p>
+<h2>11. Contact</h2>
+<p>Zordial Technologies Pvt Ltd.</p>
+<p>Bambala Pulia Toll Tax, 100-102, Tonk Rd, near Jaipuria Mgt College, Ram Nagar, Pratap Nagar, Jaipur, Rajasthan 302033</p>
+<p>Email: <a href="mailto:productsupport@zordial.in">productsupport@zordial.in</a></p>
+<hr>
+<p><em>Salesforce is a trademark of Salesforce, Inc. Salesforce OrgMaster is an independent product of Zordial Technologies Pvt Ltd. and is not affiliated with, endorsed by or sponsored by Salesforce, Inc.</em></p>
+</main></body></html>
